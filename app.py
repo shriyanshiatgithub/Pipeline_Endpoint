@@ -2,8 +2,8 @@ from flask import Flask, jsonify
 
 app = Flask(__name__)
 
-@app.route("/health", methods=["GET"])
-def health():
+@app.route("/orange", methods=["GET"])
+def orange():
     return jsonify({
         "status": "UP",
         "message": "End point creation successfull"
